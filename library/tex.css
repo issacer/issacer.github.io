@@ -1,0 +1,28 @@
+.modal.fade{
+	position: absolute;top: 0;right: 0;bottom: 0;left: 0;padding-left: 20px;padding-right: 20px;background: rgba(0,0,0,0.9);
+	display: flex;align-items: center;overflow: hidden;
+	opacity: 0;z-index: -1;
+	-webkit-transition: opacity .3s ease-out, z-index .3s ease-out;
+	-o-transition: opacity .3s ease-out, z-index .3s ease-out;
+	transition: opacity .3s ease-out, z-index .3s ease-out;
+}
+.modal.in{
+	opacity: 1;
+	z-index: 1000;
+}
+.modal-dialog{
+	box-shadow: 1px 1px 20px rgba(0,0,0,0.7);
+	-webkit-transition: -webkit-transform .3s ease-out;
+	-o-transition: -o-transform .3s ease-out;
+	transition: transform .3s ease-in;
+	-webkit-transform: translate(0, -20%);
+	-ms-transform: translate(0, -20%);
+	-o-transform: translate(0, -20%);
+	transform: translate(0, -20%);
+}
+.modal.in .modal-dialog{
+	-webkit-transform: translate(0, 0);
+	-ms-transform: translate(0, 0);
+	-o-transform: translate(0, 0);
+	transform: translate(0, 0);
+}
