@@ -11,6 +11,7 @@
 	z-index: 1000;
 }
 .modal-dialog{
+	background: white;
 	box-shadow: 1px 1px 20px rgba(0,0,0,0.7);
 	-webkit-transition: -webkit-transform .3s ease-out;
 	-o-transition: -o-transform .3s ease-out;
